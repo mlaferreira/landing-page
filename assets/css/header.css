@@ -1,0 +1,70 @@
+/* HEADER */
+header{
+    position: sticky;
+    inset: 0 0 auto 0;
+    z-index: 10;
+    box-shadow: 0 0 5px #ccc;
+    background-color: var(--background);
+}
+.header-banner{
+    display: block;
+    background-color: var(--thirdground);
+    color: var(--primary);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 2rem;
+    transition: all ease .5s;
+    line-height: 2.5rem;
+}
+.header-banner:hover{
+    opacity: .8;
+}
+.header-logo img{
+    width: 12rem;
+    height: auto;
+}
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+}
+.header-menu-opener{
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.hamburger-icon{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-icon span{
+    display: block;
+    width: 100%;
+    height: .2rem;
+    background-color: var(--secondary);
+}
+.close-icon{
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+.close-icon span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: .2rem;
+    background-color: var(--secondary);
+}
+.close-icon span:nth-child(1){
+    transform: rotate(45deg);
+}
+.close-icon span:nth-child(2){
+    transform: rotate(-45deg);
+}
