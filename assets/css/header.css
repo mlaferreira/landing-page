@@ -68,3 +68,55 @@ header{
 .close-icon span:nth-child(2){
     transform: rotate(-45deg);
 }
+header nav{
+    background-color: var(--background);
+    color: var(--secondary);
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all ease .5s;
+}
+header nav.opened{
+    max-height: 100vh;
+}
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+header nav li{
+    padding: 1rem 2rem;
+}
+header nav a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all ease .5s;
+}
+header nav a:hover{
+    opacity: .8;
+}
+header nav .nav-bold{
+    font-weight: bold;
+}
+
+@media (width > 600px){   
+
+}
+@media (width > 900px){
+    .header-menu-opener{
+        display: none;
+    }
+    header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav{        
+        max-height: 100vh;
+    }
+    header nav ul{
+        flex-direction: row;
+        padding-bottom: 0;        
+    }
+
+}
