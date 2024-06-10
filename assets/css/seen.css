@@ -1,7 +1,7 @@
 /* SEEN */
 .seen{
     background-color: var(--foreground);
-    padding: 3rem;   
+    padding: 2rem;   
 }
 .seen-grid{
     display: grid;
