@@ -21,6 +21,10 @@
     justify-content: center;
     gap: 2rem;
 }
+.topics-item-right .btn,
+.topics-item-right .btn2{
+    margin-top: 2rem;
+}
 .topics-item-right li{
     font-family: "Grandstander", sans-serif;
     font-weight: bold;
